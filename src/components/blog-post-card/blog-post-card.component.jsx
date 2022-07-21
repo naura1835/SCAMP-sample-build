@@ -11,6 +11,7 @@ import "./blog-post-card.styles.scss";
 
 const BlogPostCard = ({ blog }) => {
   const {
+    id,
     imageURL,
     title,
     categoryType,
@@ -52,10 +53,10 @@ const BlogPostCard = ({ blog }) => {
             message={readTime}
           />
         )}
-        {isMatch ? <h4>{title}</h4> : <Heading title={title} />}
+        {isMatch ? <h4>{title}</h4> : <Heading title={title} id={id} />}
         <p className="blog-card__text">{text}</p>
         {isMatch ? (
-          <ReadMore />
+          <ReadMore id={id} />
         ) : (
           <AvatarGroup
             imageURL={authorImage}
