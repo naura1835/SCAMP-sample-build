@@ -69,7 +69,7 @@ const BlogPostPage = () => {
         </Section>
       </div>
       <Footer style={{ marginTop: "64px", backgroundColor: "#1D2939" }}>
-        <FooterSection ariaLabel="footer logo and company info">
+        {/* <FooterSection ariaLabel="footer logo and company info">
           <Logo />
         </FooterSection>
         <FooterEmailSection />
@@ -77,7 +77,7 @@ const BlogPostPage = () => {
           <FooterLinks data={BlogPageFooterC1} heading="Product" />
           <FooterLinks data={BlogPageFooterC2} heading="Resources" />
         </FooterSection>
-        <FooterCopyRightLinks />
+        <FooterCopyRightLinks /> */}
       </Footer>
     </>
   );
