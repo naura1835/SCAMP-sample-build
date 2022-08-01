@@ -1,7 +1,9 @@
 import React from "react";
 
-const FooterSection = ({ ariaLabel, children }) => (
-  <section aria-label={ariaLabel}>{children}</section>
+const FooterSection = ({ ariaLabel, children, ...otherProps }) => (
+  <section aria-label={ariaLabel} {...otherProps}>
+    {children}
+  </section>
 );
 
 export default FooterSection;

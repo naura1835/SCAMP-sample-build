@@ -23,6 +23,7 @@ import FooterEmailSection from "../../components/footer-email-section/footer-ema
 import FooterCopyRightLinks from "../../components/footer-copyright-links/footer-copyright-links.component";
 import FooterLinks from "../../components/footer-links/footer-links.component";
 import FooterSection from "../../components/footer-section/footer-section.component";
+import EmailCapture from "../../components/email-capture/email-capture.component";
 
 const BlogPostPage = () => {
   const { width } = useWindowSize();
@@ -68,12 +69,28 @@ const BlogPostPage = () => {
           <MorePosts />
         </Section>
       </div>
-      <Footer style={{ marginTop: "64px", backgroundColor: "#1D2939" }}>
-        <FooterSection ariaLabel="footer logo and company info">
+      <FooterSection className="blog-post__newsletter-CTA">
+        <HeadingandSupportingText
+          heading="Join our newsletter"
+          supportingtTxt="Sign up for the very best tutorials and the latest news."
+        />
+        <EmailCapture>
+          We care about your data in our privacy policy.
+        </EmailCapture>
+      </FooterSection>
+      <Footer className="footer__container blog-post__footer">
+        <FooterSection
+          ariaLabel="footer logo and company info"
+          className="blog-post__footer__section"
+        >
           <Logo />
+          <p>
+            Design amazing digital experiences that create more happy in the
+            world.
+          </p>
         </FooterSection>
         <FooterEmailSection />
-        <FooterSection>
+        <FooterSection className="blog-post__footer__resources">
           <FooterLinks data={BlogPageFooterC1} heading="Product" />
           <FooterLinks data={BlogPageFooterC2} heading="Resources" />
         </FooterSection>
