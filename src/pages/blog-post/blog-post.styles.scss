@@ -83,5 +83,9 @@
     span {
       color: #000;
     }
+
+    @include breakpoint-up(tablet-landscape-up) {
+      display: none;
+    }
   }
 }
