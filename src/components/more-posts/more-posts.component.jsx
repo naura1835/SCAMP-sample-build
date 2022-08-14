@@ -3,7 +3,7 @@ import React from "react";
 import { blogCardData } from "../../data/blogCardData";
 
 import BlogPostCard from "../blog-post-card/blog-post-card.component";
-import CTAButton from "../CTA-button/CTA-button.component";
+import Button from "../button/button.component";
 
 import "./more-posts.styles.scss";
 
@@ -14,7 +14,7 @@ const MorePosts = () => (
       .map((blog) => (
         <BlogPostCard key={blog.id} blog={blog} />
       ))}
-    <CTAButton text="View all posts" />
+    <Button label="View all posts" />
   </div>
 );
 

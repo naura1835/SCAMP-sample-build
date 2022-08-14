@@ -2,8 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
-import CTAButton from "../CTA-button/CTA-button.component";
-import MenuBtn from "../menu-btn/menu-btn.component";
+import Button from "../button/button.component";
 import NavListItem from "../nav-list-item/nav-list-item.component";
 import NavList from "../nav-list/nav-list.component";
 
@@ -23,7 +22,9 @@ const Header = () => {
           <Logo />
         </div>
         <button aria-label="menu" className="header__nav-menu">
-          <MenuBtn />
+          <span className="menu__line"></span>
+          <span className="menu__line"></span>
+          <span className="menu__line"></span>
         </button>
         <nav className="nav">
           <NavList className="nav__list">
@@ -37,8 +38,8 @@ const Header = () => {
             ))}
           </NavList>
           <div className="nav__actions">
-            <CTAButton text="log in" isFlatBtn={true} />
-            <CTAButton text="sign up" />
+            <Button label="log in" primary={false} className="btn--flat" />
+            <Button label="sign up" />
           </div>
         </nav>
       </header>

@@ -22,6 +22,18 @@
     aspect-ratio: 1;
     background-color: transparent;
 
+    .menu__line {
+      width: 18px;
+      height: 2px;
+      background-color: var(--menu-line-color);
+      display: block;
+      margin: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+
     @include breakpoint-up(tablet-landscape-up) {
       display: none;
     }

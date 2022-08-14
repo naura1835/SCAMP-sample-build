@@ -1,4 +1,5 @@
 @use "../../globals/colors" as *;
+@use "../../globals/breakpoints" as *;
 
 .pagination {
   grid-column: 1/3;
@@ -9,5 +10,30 @@
 
   &__details {
     color: var(--text-color-2);
+  }
+
+  &__helper-btn {
+    display: flex;
+    gap: 12px;
+    width: fit-content;
+  }
+
+  &__btn-group {
+    @include breakpoint-up(tablet-landscape-up) {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+
+      &__btn {
+        border: none;
+        width: fit-content;
+
+        &:nth-of-type(1) {
+          background-color: #f9fafb;
+          border-radius: 0;
+          color: var(--text-color-1);
+        }
+      }
+    }
   }
 }
