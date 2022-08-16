@@ -4,16 +4,9 @@
   display: flex;
   flex-direction: column;
 
-  @include breakpoint-up(tablet-landscape-up) {
+  @include breakpoint-up(tablet-portrait-up) {
     flex-direction: row;
     gap: 1rem;
     align-items: baseline;
-  }
-
-  &__hint-text {
-    display: block;
-    color: var(--text-color-2);
-    margin-bottom: 1rem;
-    margin-top: 6px;
   }
 }

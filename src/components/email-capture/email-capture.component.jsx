@@ -7,20 +7,19 @@ import useInput from "../../custom-hooks/useInput";
 
 import "./email-capture.styles.scss";
 
-const EmailCapture = ({ children, className }) => {
+const EmailCapture = ({ direction, children }) => {
   const { value, handleChange } = useInput();
 
   return (
     <div className="email-capture">
-      <div className={`${className ? className : ""}`}>
-        <CustomInput
-          type="text"
-          placeholder="Enter your email"
-          handleChange={handleChange}
-          value={value}
-        />
-        <span className="medium-text email-capture__hint-text">{children}</span>
-      </div>
+      <CustomInput
+        type="text"
+        placeholder="Enter your email"
+        label={children}
+        handleChange={handleChange}
+        value={value}
+        direction={direction}
+      />
       <Button label="Subscribe" />
     </div>
   );

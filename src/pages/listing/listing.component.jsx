@@ -8,9 +8,9 @@ import {
 
 import BlogCategories from "../../components/blog-categories/blog-categories.component";
 import BlogOverview from "../../components/blog-overview/blog-overview.component";
+import EmailCapture from "../../components/email-capture/email-capture.component";
 import Footer from "../../components/footer/footer.component";
 import FooterCopyRightLinks from "../../components/footer-copyright-links/footer-copyright-links.component";
-import FooterEmailSection from "../../components/footer-email-section/footer-email-section.component";
 import FooterLinks from "../../components/footer-links/footer-links.component";
 import FooterSection from "../../components/footer-section/footer-section.component";
 import HeroContent from "../../components/hero-content/hero-content.component";
@@ -47,7 +47,11 @@ const ListingPage = () => {
             <FooterLinks data={ListingPageFooterC2} />
           </div>
         </FooterSection>
-        <FooterEmailSection />
+        <FooterSection ariaLabel="email capture">
+          <EmailCapture direction="column-reverse">
+            Stay up to date
+          </EmailCapture>
+        </FooterSection>
         <FooterCopyRightLinks />
       </Footer>
     </>

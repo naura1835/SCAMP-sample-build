@@ -35,7 +35,7 @@
     width: fit-content;
   }
 
-  @include breakpoint-up(tablet-landscape-up) {
+  @include breakpoint-up(tablet-portrait-up) {
     width: fit-content;
   }
 }

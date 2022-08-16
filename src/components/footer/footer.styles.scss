@@ -22,10 +22,14 @@
     margin-top: 40px;
     display: flex;
     column-gap: 123px;
+    margin-bottom: 12px;
 
     @include breakpoint-up(tablet-landscape-up) {
       margin-top: 32px;
       column-gap: 32px;
+    }
+    @include breakpoint-up(tablet-portrait-up) {
+      column-gap: 12px;
     }
   }
 

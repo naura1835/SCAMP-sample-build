@@ -14,7 +14,7 @@ const NewsletterCTA = () => {
           supportingtTxt="
         Be the first to know about releases and industry news and insights."
         />
-        <EmailCapture className="newsletter__hint-text">
+        <EmailCapture>
           We care about your data in our &nbsp;
           <a href="/" className="privacy-policy-link">
             privacy policy.

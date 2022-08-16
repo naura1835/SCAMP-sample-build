@@ -14,6 +14,7 @@ const Sidebar = ({ categories }) => {
       <CustomInput
         type="search"
         name="search-category"
+        placeholder="Search"
         inputValue={value}
         handleChange={handleChange}
       />
