@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../components/button/button.component";
 
 export default {
-  title: "Button",
+  title: "form/Button",
   component: Button,
 };
 

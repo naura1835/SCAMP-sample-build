@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+
+import { ReactComponent as ArrowDown } from "../../assets/icons/arrow-down.svg";
 
 import "./custom-dropdown.styles.scss";
 
@@ -22,8 +25,13 @@ const CustomDropdown = ({ categories }) => {
           </option>
         ))}
       </select>
+      <ArrowDown />
     </div>
   );
+};
+
+CustomDropdown.propTypes = {
+  categories: PropTypes.array.isRequired,
 };
 
 export default CustomDropdown;

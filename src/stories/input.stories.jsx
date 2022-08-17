@@ -3,7 +3,7 @@ import React from "react";
 import CustomInput from "../components/custom-input/custom-input.component";
 
 export default {
-  title: "Form Input",
+  title: "form/Form Input",
   component: CustomInput,
 };
 
