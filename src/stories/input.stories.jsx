@@ -16,12 +16,18 @@ Search.args = {
   placeholder: "Search",
 };
 
-export const Email = Template.bind({});
+export const withOutLabel = Template.bind({});
 
-Email.args = {
+withOutLabel.args = {
   type: "text",
-  label: "Subscribe to our newsletter",
   placeholder: "Enter your email",
   direction: "column",
   color: "var(--text-color-1)",
+};
+
+export const withLabel = Template.bind({});
+
+withLabel.args = {
+  ...withOutLabel.args,
+  label: "Subscribe to our newsletter",
 };

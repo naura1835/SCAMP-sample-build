@@ -27,6 +27,8 @@ const BlogPostCard = ({ blog }) => {
 
   const isMatch = matchPath("/blog-post/:blogId", pathname);
 
+  // console.log(isMatch);
+
   return (
     <article
       className={`blog-card ${featured && !!!isMatch ? "featured" : ""}`}
