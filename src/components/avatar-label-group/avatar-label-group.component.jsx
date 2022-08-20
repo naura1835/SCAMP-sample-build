@@ -1,10 +1,8 @@
 import React from "react";
 
-import AuthorDate from "../author-date/author-date.component";
-
 import "./avatar-label-group.styles.scss";
 
-const AvatarGroup = ({ imageURL, author, date, ...otherProps }) => {
+const AvatarGroup = ({ imageURL, author, otherInfo, ...otherProps }) => {
   return (
     <section
       aria-label="author details"
@@ -16,7 +14,12 @@ const AvatarGroup = ({ imageURL, author, date, ...otherProps }) => {
         src={require(`../../${imageURL}`)}
         alt=""
       />
-      <AuthorDate author={author} date={date} />
+      <div className="author-card__info">
+        <h3 className="medium-text">{author}</h3>
+        <span className="medium-text author-card__info__supporting-text">
+          {otherInfo}
+        </span>
+      </div>
     </section>
   );
 };

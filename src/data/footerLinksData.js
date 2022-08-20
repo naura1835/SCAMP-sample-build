@@ -1,4 +1,4 @@
-import { Badge } from "../components/badge-group/badge-group.component";
+import BadgeGroup from "../components/badge-group/badge-group.component";
 
 export const ListingPageFooterC1 = ["Overview", "Careers", "Features"];
 export const ListingPageFooterC2 = ["Help", "Pricing", "Pricing"];
@@ -9,12 +9,12 @@ export const BlogPageFooterC1 = [
   "Features",
   <>
     Solutions&nbsp;
-    <Badge
+    <BadgeGroup
       badge="New"
-      style={{
+      backgroundColor="rgba(255, 255, 255, 0.2)"
+      color="#ffffff"
+      otherStyle={{
         display: "inline",
-        color: "#ffffff",
-        backgroundColor: "rgba(255, 255, 255, 0.2)",
         border: "1px solid rgba(255, 255, 255, 0.3)",
         padding: "2px 8px",
         width: "fit-content",

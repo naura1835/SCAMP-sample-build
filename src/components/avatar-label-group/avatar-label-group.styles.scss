@@ -8,4 +8,13 @@
     aspect-ratio: 1;
     object-fit: cover;
   }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &__supporting-text {
+      color: var(--text-color-2);
+    }
+  }
 }
