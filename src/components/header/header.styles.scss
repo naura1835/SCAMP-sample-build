@@ -48,21 +48,6 @@
       justify-content: space-between;
       margin-left: 40px;
 
-      &__list {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-
-        &__item {
-          display: inline-block;
-          text-transform: capitalize;
-
-          &:not(:last-child) {
-            margin-right: 2rem;
-          }
-        }
-      }
-
       &__actions {
         display: flex;
         gap: 0.75;

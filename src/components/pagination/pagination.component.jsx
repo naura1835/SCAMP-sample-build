@@ -19,8 +19,8 @@ const Pagination = () => {
   const next = width >= 900 && <span className="medium-text">Next</span>;
 
   for (let i = 1; i <= 10; i++) {
-    if (i == 4 || i == 5 || i == 6) continue;
-    if (i == 7) buttons.push("...");
+    if (i === 4 || i === 5 || i === 6) continue;
+    if (i === 7) buttons.push("...");
     else
       buttons.push(
         <Button

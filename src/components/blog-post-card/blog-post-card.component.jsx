@@ -63,7 +63,7 @@ const BlogPostCard = ({ blog }) => {
           <AvatarGroup
             imageURL={authorImage}
             author={author}
-            date={datePosted}
+            otherInfo={datePosted}
           />
         )}
       </div>

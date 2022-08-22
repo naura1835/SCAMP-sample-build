@@ -3,7 +3,7 @@ import React from "react";
 import BadgeGroup from "../components/badge-group/badge-group.component";
 
 export default {
-  title: "Badge",
+  title: "components/Badge",
   component: BadgeGroup,
 };
 

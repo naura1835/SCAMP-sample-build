@@ -3,7 +3,7 @@ import React from "react";
 import useInput from "../../custom-hooks/useInput";
 
 import CustomInput from "../custom-input/custom-input.component";
-import VerticalTab from "../vertical-tab/vertical-tab.component";
+import NavList from "../nav-list/nav-list.component";
 
 import "./sidebar.styles.scss";
 
@@ -18,7 +18,10 @@ const Sidebar = ({ categories }) => {
         inputValue={value}
         handleChange={handleChange}
       />
-      <VerticalTab title="Blog categories" categories={categories} />
+      <nav className="vertical-tab">
+        <h3 className="vertical-tab__heading medium-text">Blog categories</h3>
+        <NavList mode="vertical" items={categories} />
+      </nav>
     </aside>
   );
 };

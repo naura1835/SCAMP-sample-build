@@ -3,17 +3,24 @@ import { Outlet } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import Button from "../button/button.component";
-import NavListItem from "../nav-list-item/nav-list-item.component";
 import NavList from "../nav-list/nav-list.component";
 
 import "./header.styles.scss";
 
 const Header = () => {
   const headerData = [
-    { title: "Home" },
-    { title: "resources", isDropdown: "isDropdown" },
-    { title: "resources", isDropdown: "isDropdown" },
-    { title: "Pricing" },
+    { title: "Home", className: "nav-list__item--horizontal" },
+    {
+      title: "resources",
+      className: "nav-list__item--horizontal",
+      isDropdown: true,
+    },
+    {
+      title: "resources",
+      className: "nav-list__item--horizontal",
+      isDropdown: true,
+    },
+    { title: "Pricing", className: "nav-list__item--horizontal" },
   ];
   return (
     <>
@@ -27,16 +34,7 @@ const Header = () => {
           <span className="menu__line"></span>
         </button>
         <nav className="nav">
-          <NavList className="nav__list">
-            {headerData.map(({ title, isDropdown }, index) => (
-              <NavListItem
-                key={index}
-                className="nav__list__item"
-                text={title}
-                isDropdown={isDropdown}
-              />
-            ))}
-          </NavList>
+          <NavList mode="horizontal" items={headerData} />
           <div className="nav__actions">
             <Button label="log in" primary={false} className="btn--flat" />
             <Button label="sign up" />

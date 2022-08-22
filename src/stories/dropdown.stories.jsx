@@ -13,4 +13,4 @@ export default {
   },
 };
 
-export const Dropdown = (args) => <CustomDropdown {...args} />;
+export const Default = (args) => <CustomDropdown {...args} />;

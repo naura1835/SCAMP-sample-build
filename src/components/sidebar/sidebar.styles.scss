@@ -1,4 +1,13 @@
 .sidebar {
   max-width: 280px;
   width: 100%;
+
+  .vertical-tab {
+    margin-top: 2rem;
+
+    &__heading {
+      color: var(--primary-color);
+      margin-bottom: 1.25rem;
+    }
+  }
 }

@@ -1,20 +1,22 @@
+import React from "react";
+
 import { NavListItem } from "../components/nav-list/nav-list.component";
 
 export default {
-  title: "Nav Item",
+  title: "components/NavItem",
   component: NavListItem,
 };
 
 const Template = (args) => <NavListItem {...args} />;
 
-export const NavItem = Template.bind({});
-NavItem.args = {
+export const Default = Template.bind({});
+Default.args = {
   isDropdown: false,
-  text: "Link 1",
+  title: "Link 1",
 };
 
 export const NavItemDropdown = Template.bind({});
 NavItemDropdown.args = {
   isDropdown: true,
-  text: "Link 2",
+  title: "Link 2",
 };

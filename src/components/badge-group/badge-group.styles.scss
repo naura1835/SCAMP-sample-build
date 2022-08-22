@@ -50,14 +50,11 @@
     font-weight: 600;
   }
   .message {
+    display: block;
     background-color: #ffffff;
     border-radius: inherit;
     padding: 2px 8px;
     text-transform: capitalize;
     margin-right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
   }
 }

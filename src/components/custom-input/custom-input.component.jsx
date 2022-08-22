@@ -14,7 +14,7 @@ const CustomInput = (props) => {
     <div className="input" style={{ flexDirection: direction }}>
       <div
         className="input__box"
-        style={direction == "column-reverse" ? { marginBottom: "1rem" } : null}
+        style={direction === "column-reverse" ? { marginBottom: "1rem" } : null}
       >
         {type === "search" && <SearchIcon />}
         <input value={inputValue} onChange={handleChange} {...otherProps} />
