@@ -1,4 +1,5 @@
 import React from "react";
+import propTypes from "prop-types";
 
 import useInput from "../../custom-hooks/useInput";
 
@@ -24,6 +25,15 @@ const Sidebar = ({ categories }) => {
       </nav>
     </aside>
   );
+};
+
+Sidebar.propTypes = {
+  categories: propTypes.arrayOf(propTypes.string).isRequired,
+  handleChange: propTypes.func,
+  value: propTypes.string,
+};
+Sidebar.defaultProps = {
+  value: "",
 };
 
 export default Sidebar;
